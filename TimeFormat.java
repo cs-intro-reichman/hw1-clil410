@@ -5,14 +5,10 @@ public class TimeFormat {
 		int newHour = hours; 
 		String amPm = "";
 		String newminute = "";
-		if (hours < 12) {
+		if (hours <= 12) {
 			newHour = hours;
 			amPm = "AM";
 		}
-		if (hours == 12){
-			newHour = 0;
-			amPm = "AM";
-			}
 		if (hours > 12) {
 			newHour = hours - 12;
 			amPm = "PM";
